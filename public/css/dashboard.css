@@ -1,0 +1,136 @@
+.sidebar,
+.sidebar-mobile {
+    width: 345px;
+    padding: 1.5rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 0.5s;
+    z-index: 30;
+}
+
+.sidebar.hide,
+.sidebar-mobile.hide {
+    transform: translatex(-345px);
+}
+
+.sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    row-gap: 5px;
+    overflow: auto;
+    max-height: 570px;
+}
+
+.sidebar__menu a {
+    text-decoration: none !important;
+    color: #000 !important;
+    border-radius: 18px;
+    padding: 20px 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.sidebar__menu a.--active,
+.sidebar__menu a:hover {
+    color: #fff !important;
+    background-color: var(--primary);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 35px;
+    padding-left: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: padding 0.5s;
+    z-index: 20;
+    background-color: #fff;
+}
+
+.navbar.expand {
+    padding-left: 35px;
+}
+
+.main-container {
+    padding-left: 0;
+    transition: padding 0.5s;
+}
+
+.main-container.expand {
+    padding-left: 0;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 25;
+}
+
+
+.sidebar__menu::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.sidebar__menu::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.sidebar__menu::-webkit-scrollbar-thumb {
+    background: #858585;
+    border: 0px none #fff;
+    border-radius: 50px;
+}
+
+.sidebar__menu::-webkit-scrollbar-thumb:hover {
+    background: #787878;
+}
+
+.sidebar__menu::-webkit-scrollbar-thumb:active {
+    background: #5e5e5e;
+}
+
+.sidebar__menu::-webkit-scrollbar-track {
+    background: #fff;
+    border: 0px none #fff;
+    border-radius: 50px;
+}
+
+.sidebar__menu::-webkit-scrollbar-track:hover {
+    background: #c7c7c7;
+}
+
+.sidebar__menu::-webkit-scrollbar-track:active {
+    background: #8c8c8c;
+}
+
+.sidebar__menu::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+
+@media (min-width: 992px) {
+    .navbar {
+        padding-left: 380px;
+    }
+
+    .main-container {
+        padding-left: 345px;
+    }
+
+}

@@ -1,0 +1,126 @@
+:root {
+    --primary: #5eaaa8;
+    --primary-dark: #2b7b79;
+    --primary-light: #98ded3;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.form-floating .iconify {
+    position: absolute;
+    font-size: calc(1.275rem + 0.3vw);
+    top: 19px;
+    left: 13px;
+}
+
+
+.btn-primary,
+.btn-info,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-outline-primary:hover,
+.btn-outline-info:hover,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fs-normal {
+    font-size: 16px;
+}
+
+.fs-14px {
+    font-size: 14px;
+}
+
+/* Grid */
+.gtc-1-1 {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Spacing */
+.h-420px {
+    height: 420px;
+}
+
+.h-25px {
+    height: 25px;
+}
+
+.h-100px {
+    height: 100px;
+}
+
+.h-115px {
+    height: 115px;
+}
+
+.w-140px {
+    width: 140px;
+}
+
+.w-345px {
+    width: 345px;
+}
+
+.w-20pc {
+    width: 20%;
+}
+
+.pl-345px {
+    padding-left: 345px;
+}
+
+.p-35px {
+    padding: 35px;
+}
+
+.-top-40px {
+    top: -40px;
+}
+
+/* Position */
+.absolute-full {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Object */
+.object-cover {
+    object-fit: cover;
+}
+
+/* Border */
+.rounded-20px {
+    border-radius: 20px;
+}
+
+/* Background */
+.bg-primary-light {
+    background-color: var(--primary-light);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.b-icon {
+    vertical-align: -0.125em;
+}
+
+select option {
+    color: black !important;
+}
