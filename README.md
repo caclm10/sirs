@@ -1,4 +1,4 @@
-# Student Report Information System for SMA Swasta Eria Medan
+# Sistem Informasi Raport Siswa (SIRS) SMA Swasta Eria Medan
 
 Welcome to the repository for the Student Report Information System for SMA Swasta Eria Medan. This project is a web application built using the [Laravel](https://laravel.com/) framework and the [MySQL](https://www.mysql.com) database management system. The application is designed to aid in the management of student report data for SMA Swasta Eria Medan (Internship).
 
